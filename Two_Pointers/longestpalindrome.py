@@ -1,0 +1,48 @@
+class Solution:
+    def longestPalindromeNO(self, s: str) -> str:
+        res = 0
+        for i in range(len(s)):
+            l,r = i, i
+            while l >= 0 and r < len(s) and s[l] == s[r]:
+                res = max(res, r-l+1)
+                l-=1
+                r+=1
+
+            r = i
+            while r < len(s) and s[i] == s[r]:
+                res = max(res, r-i+1)
+                r+=1
+
+        return res
+    
+
+    def longestPalindrome(self, s: str) -> str:
+        res = ""
+        resLen = 0
+        for i in range(len(s)):
+            l,r = i, i
+            while l >= 0 and r < len(s) and s[l] == s[r]:
+                if r-l+1 > len(res):
+                    res = s[l:r+1]
+                    # resLen = r-l+1
+
+                l-=1
+                r+=1
+
+            l, r = i, i+1
+            while l >= 0 and r < len(s) and s[l] == s[r]:
+                if r-l+1 > len(res):
+                    res = s[l:r+1]
+                    # resLen = r-l+1
+
+                l-=1
+                r+=1
+
+        return res
+    
+sol = Solution()
+res = sol.longestPalindrome("ccd")
+print(res)
+
+# babad
+# .  
