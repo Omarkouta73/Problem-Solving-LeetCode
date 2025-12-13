@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": false,
-      "cwd": "/home/omar/Study/Programming/Problem-Solving-LeetCode/Arrays",
-      "program": "/home/omar/Study/Programming/Problem-Solving-LeetCode/Arrays/build/Debug/outDebug",
+      "cwd": "/home/omar/Study/Programming/Problem-Solving-LeetCode/Arrays-Sorting",
+      "program": "/home/omar/Study/Programming/Problem-Solving-LeetCode/Arrays-Sorting/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
