@@ -3,7 +3,7 @@ def sliding_window(arr, k):
     window_value = 0
     for left in range(k):
         # cummulative window_value
-        window_value+=arr[left]
+        window_value+=arr[left] # increase left
     
     # best = what you window_valueed from left
     best = window_value
@@ -12,7 +12,7 @@ def sliding_window(arr, k):
 
     for right in range(k, n):
         # calculate what is the current left
-        left = right - k
+        left = right - k # calculate left
         window_value += arr[right] # add from right
         window_value -= arr[left] # remove from left
         best = max(best, window_value)
